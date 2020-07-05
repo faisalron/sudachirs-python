@@ -52,7 +52,8 @@ $ pip install .
 ## Performance Benchmark
 
 Sudachirs-python vs sudachipy==0.4.2 (Pure Python).
-The Rust version is 16-38x faster.
+
+The Rust version is **30x faster**.
 
 ```
 ============================================ test session starts =============================================
@@ -72,7 +73,7 @@ test_sudachipy        11,755.0310 (38.42)    42,088.3221 (7.88)     15,189.1679 
 ```
 
 Sudachirs-python vs sudachipy==0.4.9 (Cython Optimized).
-The Rust version is 8-11x faster.
+The Rust version is around **8x faster**.
 
 ```
 ============================================ test session starts =============================================
