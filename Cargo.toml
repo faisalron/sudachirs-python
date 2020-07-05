@@ -1,0 +1,23 @@
+[package]
+name = "sudachirs"
+version = "0.1.0"
+authors = ["Sorami Hisamoto <s@89.io>"]
+edition = "2018"
+
+[lib]
+name = "sudachirs"
+crate-type = ["cdylib"]
+
+[dependencies]
+structopt = "0.2"
+nom = "4.2.2"
+
+[dependencies.pyo3]
+version = "0.11.0"
+features = ["extension-module"]
+
+[target.x86_64-apple-darwin]
+rustflags = [
+  "-C", "link-arg=-undefined",
+  "-C", "link-arg=dynamic_lookup",
+]
