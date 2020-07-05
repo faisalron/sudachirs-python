@@ -52,8 +52,17 @@ $ pip install .
 ## Performance Benchmark
 
 Sudachirs-python vs sudachipy==0.4.2 (Pure Python)
+The Rust version is 16-38x faster.
 
 ```
+============================================ test session starts =============================================
+platform darwin -- Python 3.6.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+benchmark: 3.2.3 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
+rootdir: /Users/kaigit/Documents/GitHub/sudachirs-python.rs
+plugins: celery-4.4.0, benchmark-3.2.3
+collected 2 items                                                                                            
+
+benchmark_test.py ..
 ---------------------------------------------------------------------------------------------- benchmark: 2 tests ----------------------------------------------------------------------------------------------
 Name (time in us)             Min                    Max                   Mean                StdDev                 Median                   IQR            Outliers         OPS            Rounds  Iterations
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -63,8 +72,18 @@ test_sudachipy        11,755.0310 (38.42)    42,088.3221 (7.88)     15,189.1679 
 ```
 
 Sudachirs-python vs sudachipy==0.4.9 (Cython Optimized)
+The Rust version is 8-11x faster.
 
 ```
+============================================ test session starts =============================================
+platform darwin -- Python 3.6.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
+benchmark: 3.2.3 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
+rootdir: /Users/kaigit/Documents/GitHub/sudachirs-python.rs
+plugins: celery-4.4.0, benchmark-3.2.3
+collected 2 items                                                                                            
+
+benchmark_test.py ..
+
 -------------------------------------------------------------------------------------------- benchmark: 2 tests --------------------------------------------------------------------------------------------
 Name (time in us)            Min                   Max                  Mean                StdDev                Median                   IQR            Outliers         OPS            Rounds  Iterations
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
