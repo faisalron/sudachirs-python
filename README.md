@@ -53,7 +53,7 @@ $ pip install .
 
 Sudachirs-python vs sudachipy==0.4.2 (Pure Python).
 
-The Rust version is **30x faster**.
+The Rust version is around **30x faster**.
 
 ```
 ============================================ test session starts =============================================
