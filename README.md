@@ -59,7 +59,6 @@ The Rust version is around **30x faster**.
 ============================================ test session starts =============================================
 platform darwin -- Python 3.6.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
 benchmark: 3.2.3 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
-rootdir: /Users/kaigit/Documents/GitHub/sudachirs-python.rs
 plugins: celery-4.4.0, benchmark-3.2.3
 collected 2 items                                                                                            
 
@@ -80,7 +79,6 @@ The Rust version is around **8x faster**.
 ============================================ test session starts =============================================
 platform darwin -- Python 3.6.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1
 benchmark: 3.2.3 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
-rootdir: /Users/kaigit/Documents/GitHub/sudachirs-python.rs
 plugins: celery-4.4.0, benchmark-3.2.3
 collected 2 items                                                                                            
 
