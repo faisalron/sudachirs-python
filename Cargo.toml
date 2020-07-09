@@ -1,8 +1,8 @@
 [package]
 name = "sudachirs"
 version = "0.1.0"
-authors = ["Sorami Hisamoto <s@89.io>"]
-edition = "2018"
+authors = ["Faisal I Hadiputra <faisalron@gmail.com>"]
+edition = "2020"
 
 [lib]
 name = "sudachirs"
